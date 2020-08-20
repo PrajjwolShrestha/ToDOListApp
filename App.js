@@ -1,21 +1,25 @@
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, View, SafeAreaView } from 'react-native';
 
-export default function App() {
-  return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
-  );
-}
+//create an app as a class
+export default class TodoListApp extends Component{
+  //render function is the main component inside the class which returns view
+  render(){
+    return(
+      //returns view component
+      //safearea view
+      <SafeAreaView>
+        
+      </SafeAreaView>
 
+    )
+  }
+} 
+
+//outside of the class, create a stylesheet
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+  main:{
+    paddingHorizontal:10,
+  }
+})
